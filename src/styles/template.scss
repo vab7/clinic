@@ -1,0 +1,66 @@
+@import "colors";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+button,
+h1,
+span {
+  font-family: "PT Sans Caption", sans-serif;
+  color: $color-text-1;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.color-1 {
+  color: $color-1;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-text-1 {
+  color: $color-text-1;
+}
+
+.bg-color-1 {
+  background-color: $color-1;
+}
+
+.bg-color-1-dark {
+  background-color: $color-1-dark;
+}
+
+.color-dark-2 {
+  background-color: $color-dark-2;
+}
+
+.border-1 {
+  border: 1.5px solid $color-1;
+}
+
+.border-2 {
+  border: 1.5px solid white;
+}
+
+.border-3 {
+  border: 1.5px solid $color-dark-2;
+}
+
+.border-radius {
+  border-radius: 50px;
+}
+
+.slick-list {
+  border-radius: 5px !important;
+}

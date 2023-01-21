@@ -1,0 +1,55 @@
+@import "../../../styles/colors";
+
+#triangle {
+  display: none;
+
+  @media screen and (min-width: 992px) {
+    display: block;
+    border-bottom: 400px solid #e2f0ef;
+    border-right: 100px solid transparent;
+  }
+}
+
+#carousel_img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  @media screen and (min-width: 992px) {
+    width: 100%;
+    height: auto;
+    top: -100px;
+  }
+}
+
+#carousel_container {
+  width: 100%;
+  justify-content: center;
+  background-color: rgba($color: #e2f0ef, $alpha: 0.85);
+
+  @media screen and (min-width: 992px) {
+    width: auto;
+    background-color: #e2f0ef;
+  }
+}
+
+#carousel_content {
+  padding: 0 30px 0 50px;
+
+  @media screen and (min-width: 992px) {
+    padding-left: 3.7rem;
+  }
+}
+
+#carousel_buttons {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 576px) {
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+  }
+}

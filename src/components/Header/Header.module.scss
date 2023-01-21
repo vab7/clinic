@@ -1,0 +1,62 @@
+#header_container {
+  margin-bottom: 60px;
+  @media screen and (min-width: 992px) {
+    margin-bottom: 105px;
+  }
+}
+
+#burger_menu {
+  display: block;
+
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
+
+#address {
+  display: none;
+
+  @media screen and (min-width: 992px) {
+    display: block;
+  }
+}
+
+#logo svg {
+  width: 55px;
+
+  @media screen and (min-width: 992px) {
+    width: 92px;
+  }
+}
+
+#icon_phone {
+  display: none;
+
+  @media screen and (min-width: 992px) {
+    display: block;
+  }
+}
+
+#number {
+  font-weight: bold;
+
+  @media screen and (min-width: 992px) {
+    font-weight: normal;
+  }
+}
+
+#city {
+  display: flex;
+
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
+
+#button_appointment {
+  display: none;
+
+  @media screen and (min-width: 992px) {
+    display: block;
+  }
+}

@@ -1,0 +1,21 @@
+#menu_item {
+  a::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    width: 0%;
+    right: 0;
+    left: initial;
+    height: 1px;
+    background-color: white;
+    transition: width 0.3s;
+  }
+
+  a:hover {
+    &::after {
+      width: 100%;
+      left: 0;
+      right: initial;
+    }
+  }
+}

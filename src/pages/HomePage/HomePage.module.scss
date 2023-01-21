@@ -1,0 +1,42 @@
+#feature {
+  background-color: #f8fbfa;
+
+  @media screen and (min-width: 992px) {
+    height: 500px;
+    position: relative;
+  }
+}
+
+#feature_section {
+  @media screen and (min-width: 992px) {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+#feature_container_text {
+  width: 100%;
+  padding: 2rem 0.3rem;
+
+  @media screen and (min-width: 576px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 1400px) {
+    width: 60%;
+  }
+}
+
+#bg_home_img {
+  width: 100%;
+  min-height: 300px;
+  max-height: 500px;
+  object-fit: cover;
+
+  @media screen and (min-width: 992px) {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
