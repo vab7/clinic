@@ -1,3 +1,4 @@
+import { useActions } from "../../../hooks/actions";
 import { ICheckUp } from "../../../models/models";
 import { Button } from "../../Button";
 import s from "./Card.module.scss";
@@ -10,6 +11,8 @@ export const CardCarousel = ({
   list,
   img,
 }: ICheckUp) => {
+  const { openForm } = useActions();
+
   return (
     <div id="carousel" className="relative flex h-[400px] overflow-hidden">
       <img src={img} id={s.carousel_img} className="absolute" alt={name} />
@@ -38,7 +41,7 @@ export const CardCarousel = ({
           <div id={s.carousel_buttons} className="flex gap-3">
             <div className="w-[165px]">
               <Button
-                onClick={() => console.log("click")}
+                onClick={() => openForm()}
                 text="Записаться"
                 bg="bg-color-1"
                 bgHover="color-dark-2"
@@ -48,7 +51,7 @@ export const CardCarousel = ({
             </div>
             <div className="w-[165px]">
               <Button
-                onClick={() => console.log("click")}
+                onClick={() => openForm()}
                 text="Подробнее"
                 bg="bg-transparent"
                 bgHover="bg-transparent"
