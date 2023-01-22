@@ -57,7 +57,7 @@ export const Carousel: React.FC<ICarousel> = ({ data }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 110000,
+    autoplaySpeed: 5000,
     afterChange: (current: number) => setSlideNumber(current + 1),
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
